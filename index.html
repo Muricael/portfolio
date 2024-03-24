@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!---box icons link--->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <!---remix icons link--->
     <link
-            href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
             rel="stylesheet"
     />
 
@@ -20,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -34,21 +36,22 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!--- <li><a href="#contact">Contact</a></li> --->
         </ul>
 
         <div class="top-btnn">
-            <a href="#" class="h-btn">Contact me</a>
+            <a href="#contact" class="h-btn">Contact me</a>
         </div>
 
     </header>
 
     <!--- hero--->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Bonjour!</h4>
             <h1>Je suis <span>Alexandre Romeo</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolor expedita facilis, hic in iste nam officia officiis porro tenetur!</p>
+            <p>La science des données est en plein essor, et l'imagination collective la perçoit comme une magie moderne.
+            Les principes de cette science sont pourtant issues de</p>
             <div class="social">
                 <a href="#"><i class="ri-facebook-fill"></i></a>
                 <a href="#"><i class="ri-instagram-fill"></i></a>
@@ -57,7 +60,7 @@
             </div>
 
             <div class="main-button">
-                <a href="#" class="btn">Embauchez-moi</a>
+                <!--- <a href="#" class="btn">Embauchez-moi</a> --->
                 <a href="#" class="btn btn2">Téléchargez CV</a>
             </div>
         </div>
@@ -66,12 +69,12 @@
 
     <!---hero--->
     <section class="about" id="about" >
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="img/about.jpg">
         </div>
 
-        <div class="about-text">
-            <h2>Je suis un Data <span>Scientist</span> <br> & Web Developer</h2>
+        <div class="about-text" data-aos="zoom-in-up">
+            <h2>Je suis un Data <span>Scientist</span> <br> & Ingénieur Supply-chain</h2>
             <div class="exp-area">
                 <p class="exp">
                     Experience:
@@ -81,23 +84,16 @@
 
                 <p class="exp">
                     Spécialité
-                    <span> La première ligne de la Supply Chain</span></p>
+                    <span> La ligne informative de la Supply Chain</span></p>
 
                 <p class="exp">
                     Adresse:
-                    <span>Là où tu pars en vacances</span></p>
+                    <span>VIlleurbanne</span></p>
 
                 <p class="exp">
                     Email:
                     <span>alexandre.datascience@gmail.com</span></p>
 
-                <p class="exp">
-                    Phone:
-                    <span>comme tu planes</span></p>
-
-                <p class="exp">
-                    Freelance:
-                    <span>Valide</span></p>
             </div>
             <!--- le href me permet de mettre un lien plus tard--->
 
@@ -108,14 +104,14 @@
 
     <!---services--->
     <section class="services" id="services">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Mes <span>Services</span></h2>
         </div>
 
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="img/s-1.svg">
-                <h3>UI/UX Design</h3>
+                <h3>SUPPLY</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, beatae delectus eum
                     exercitationem illum labore laborum minima molestias nostrum nulla officiis optio porro quo quos,
                     rerum sapiente sit voluptatem.</p>
@@ -127,7 +123,7 @@
 
             <div class="box">
                 <img src="img/s-2.svg">
-                <h3>UI/UX Design</h3>
+                <h3>SUPPLY</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, beatae delectus eum
                     exercitationem illum labore laborum minima molestias nostrum nulla officiis optio porro quo quos,
                     rerum sapiente sit voluptatem.</p>
@@ -139,7 +135,7 @@
 
             <div class="box">
                 <img src="img/s-3.svg">
-                <h3>UI/UX Design</h3>
+                <h3>SUPPLY</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda at, beatae delectus eum
                     exercitationem illum labore laborum minima molestias nostrum nulla officiis optio porro quo quos,
                     rerum sapiente sit voluptatem.</p>
@@ -154,97 +150,109 @@
 
     <!---portfolio--->
     <section class="portfolio" id="portfolio">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Mon <span>Portfolio</span></h2>
         </div>
 
-        <div class="portfolio-content">
+        <div class="portfolio-content" data-aos="zoom-in-up">
             <div class="row">
-                <img src="img/port-1.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Data Analyse</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
 
             <div class="row">
-                <img src="img/port-2.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Data Analyse</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
 
             <div class="row">
-                <img src="img/port-3.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Data Analyse</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
 
             <div class="row">
-                <img src="img/port-4.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Data Analyse</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
 
             <div class="row">
-                <img src="img/port-5.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Data Analyse</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
 
             <div class="row">
-                <img src="img/port-6.jpg">
-                <div class="main-row">
-                    <div class="row-text">
-                        <h5>Website Design</h5>
+                <a href="pages/tableau.html">
+                    <img src="img/logtab2.png">
+                    <div class="main-row">
+                        <div class="row-text">
+                            <h5>Web Scrapping</h5>
+                        </div>
+                        <div class="row-icon">
+                            <!--<i class="ri-github-fill"></i>-->
+                        </div>
                     </div>
-                    <div class="row-icon">
-                        <i class="ri-github-fill"></i>
-                    </div>
-                </div>
-                <h4>Website Development for Dark X</h4>
+                    <h4>Etudes de cas<br>Tableau Software</h4>
+                </a>
             </div>
         </div>
     </section>
 
     <!---contact-->
     <section class="contact" id="contact">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Contactez <span>Moi</span></h2>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <form action="">
                 <input type="text" placeholder="Votre nom" required>
                 <input type="email" placeholder="Votre Email" required>
@@ -268,8 +276,14 @@
     <!---js link--->
     <script src="js/script.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
+
 
 </body>
 </html>
-
-50 passées, revoir le menu quand on le réduit.

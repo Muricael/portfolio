@@ -30,7 +30,7 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10001;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +67,7 @@ span{
 
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
@@ -283,14 +283,15 @@ header.sticky{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 200px));
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
 .row img{
-    height: auto;
+    height: 200px;
     width: 100%;
+    object-fit: cover;
     border-radius: 28px;
     margin-bottom: 1.4rem;
 }
@@ -300,6 +301,7 @@ header.sticky{
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
+    background-blend-mode: multiply;
     transition: all .50s ease;
 }
 .main-row {
@@ -338,6 +340,7 @@ header.sticky{
 }
 .contact-form{
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     margin-top: 4.2rem;
@@ -485,7 +488,7 @@ form .send-btn:hover{
     .social{
         margin-bottom: 20px;
     }
-    .menu-icon{
+    #menu-icon{
         display: block;
     }
     .navlist{
@@ -504,15 +507,14 @@ form .send-btn:hover{
         padding: 17px;
         font-size: 22px;
     }
-    .navlist active{
-        right: 0
+    .navlist.active{
+        right: 0;
     }
 }
 
 @media (max-width: 680px) {
     .main-content p{
         width: 100%;
-
     }
 }
 
@@ -521,6 +523,8 @@ form .send-btn:hover{
         --h1-font: 3rem;
         --h2-font: 2rem;
     }
+
+
     .about img{
         text-align: center;
         width: 100%;
@@ -532,17 +536,6 @@ form .send-btn:hover{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.portfolio-content a {
+    display: block;
+}
